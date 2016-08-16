@@ -2,7 +2,7 @@ package utils;
 
 public class BinaryTreeNode
 {
-	public int value;
+	public Integer value;
 
 	public BinaryTreeNode leftNode;
 
