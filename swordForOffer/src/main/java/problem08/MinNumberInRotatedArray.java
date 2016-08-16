@@ -60,14 +60,4 @@ public class MinNumberInRotatedArray
 		}
 		return result;
 	}
-
-	public static void main(String[] args) throws Exception
-	{
-		int[] numbers =
-		{ 1, 0, 1, 1, 1 };
-		MinNumberInRotatedArray minNumberInRotatedArray = new MinNumberInRotatedArray();
-		int min = minNumberInRotatedArray.min(numbers, numbers.length);
-		System.out.println(min);
-	}
-
 }
