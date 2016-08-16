@@ -2,7 +2,7 @@ package problem08;
 
 /**
  * 旋转数组嘴小的数字，如{3，4，5，1，2}为{1，2，3，4，5}的一个旋转
- * 
+ *
  * @author bjyangrubing
  *
  */
@@ -15,7 +15,7 @@ public class MinNumberInRotatedArray
 		int index1 = 0;
 		int index2 = length - 1;
 		int indexMid = index1;//特殊情况处理，如果数组为{1，2，3，4，5},则直接返回1
-		while (numbers[index1] >= numbers[index2])
+		while (numbers[index1] >= numbers[index2])//这一句的目的也是为了上面特殊情况，如果为上述数组，则可直接返回numbers[index1]
 		{
 			if (index2 - index1 == 1)
 			{
