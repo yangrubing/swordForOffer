@@ -1,9 +1,9 @@
 package problem06;
 
+import utils.BinaryTreeNode;
+
 import java.security.InvalidParameterException;
 import java.util.Arrays;
-
-import utils.BinaryTreeNode;
 
 /**
  * 输入前序和中序遍历结果，重建二叉树
@@ -44,8 +44,7 @@ public class ContructBinaryTree
 	{
 		if (root != null)
 		{
-			if (root.value != null)
-				System.out.println(root.value);
+			System.out.println(root.value);
 			preOrder(root.leftNode);
 			preOrder(root.rightNode);
 		}
@@ -61,8 +60,7 @@ public class ContructBinaryTree
 		if (root != null)
 		{
 			inOrder(root.leftNode);
-			if (root.value != null)
-				System.out.println(root.value);
+			System.out.println(root.value);
 			inOrder(root.rightNode);
 		}
 
