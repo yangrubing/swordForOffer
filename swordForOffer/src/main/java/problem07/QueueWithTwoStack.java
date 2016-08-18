@@ -21,9 +21,12 @@ public class QueueWithTwoStack
 
 	public String deletedHead() throws Exception
 	{
-		while (!stack1.isEmpty())//如果栈1不为空，则把栈1的元素全部push到栈2
+		if (stack2.isEmpty())//如果栈2为空则把栈1中的数据都压栈，否则直接出栈
 		{
-			stack2.push(stack1.pop());
+			while (!stack1.isEmpty())//如果栈1不为空，则把栈1的元素全部push到栈2
+			{
+				stack2.push(stack1.pop());
+			}
 		}
 
 		if (stack2.size() == 0)
