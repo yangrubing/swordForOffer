@@ -11,6 +11,6 @@ public class StringPermutationTest
 	public void test()
 	{
 		StringPermutation p = new StringPermutation();
-		p.permutation("", "ABC");
+		p.permutation("", "ABCD");
 	}
 }
