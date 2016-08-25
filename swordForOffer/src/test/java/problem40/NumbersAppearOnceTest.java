@@ -21,6 +21,5 @@ public class NumbersAppearOnceTest
 		n.FindNumsAppearOnce(new int[]
 		{ 1, 2, 3, 3, 4, 4, 5, 5, 6, 6 }, num1, num2);
 		Assert.assertTrue(num1[0] == 1 || num2[0] == 1);
-
 	}
 }
